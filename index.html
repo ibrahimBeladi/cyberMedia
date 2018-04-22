@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="./lib/vuetify/vuetify-v1.0.0.min.css">
+
+	<style>
+		[v-cloak] {
+			display: none;
+		}
+	</style>
+
+	<title>CyberMedia</title>
+</head>
+
+<body>
+	<v-app id="app" v-cloak>
+		<v-toolbar color="blue" dense app dark>
+			<v-toolbar-items>
+				<v-btn to="home" flat>CyberMedia</v-btn>
+			</v-toolbar-items>
+
+			<v-spacer></v-spacer>
+
+			<v-toolbar-items>
+				<v-btn flat to="p1">Link One</v-btn>
+				<v-btn flat to="p2">Link Two</v-btn>
+				<v-btn flat to="p3">Link Three</v-btn>
+				<v-btn flat to="p4">Link Three</v-btn>
+			</v-toolbar-items>
+		</v-toolbar>
+
+		<v-content>
+			<router-view></router-view>
+		</v-content>
+
+		<v-footer color="blue"></v-footer>
+	</v-app>
+
+	<!-- Libraries -->
+	<script src="./lib/vue/vue-2.5.13.js"></script>
+	<script src="./lib/vuetify/vuetify-v1.0.0.min.js"></script>
+	<script src="./lib/vue-router/vue-router-3.0.1.min.js"></script>
+
+	<!-- Routes -->
+	<script src="./routes/homeRoute.js"></script>
+	<script src="./routes/p1.js"></script>
+	<script src="./routes/p2.js"></script>
+	<script src="./routes/p3.js"></script>
+	<script src="./routes/p4.js"></script>
+
+	<!-- Router -->
+	<script src="./router.js"></script>
+
+	<!-- Main -->
+	<script>
+		new Vue({
+			el: "#app",
+			router
+		});
+	</script>
+</body>
+
+</html>
