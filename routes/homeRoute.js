@@ -1,7 +1,7 @@
 var homeRoute = {
 	template: `
 	<div>
-		<v-jumbotron src="https://vuetifyjs.com/static/doc-images/parallax/material2.jpg" :gradient="gradient" dark>
+		<v-jumbotron src="../res/parallax.jpg" :gradient="gradient" dark>
 			<v-container fill-height>
 				<v-layout align-center>
 					<v-flex text-xs-center>
