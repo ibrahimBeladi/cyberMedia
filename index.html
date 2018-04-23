@@ -19,32 +19,22 @@
 
 <body>
 	<v-app id="app" v-cloak>
-		<v-toolbar color="blue" dense app dark>
-			<v-toolbar-items>
-				<v-btn to="home" flat>CyberMedia</v-btn>
-			</v-toolbar-items>
-
-			<v-spacer></v-spacer>
-
-			<v-toolbar-items>
-				<v-btn flat to="p1">Link One</v-btn>
-				<v-btn flat to="p2">Link Two</v-btn>
-				<v-btn flat to="p3">Link Three</v-btn>
-				<v-btn flat to="p4">Link Three</v-btn>
-			</v-toolbar-items>
-		</v-toolbar>
+		<app-toolbar color="green"></app-toolbar>
 
 		<v-content>
 			<router-view></router-view>
 		</v-content>
 
-		<v-footer color="blue"></v-footer>
+		<v-footer color="green"></v-footer>
 	</v-app>
 
 	<!-- Libraries -->
 	<script src="./lib/vue/vue-2.5.13.js"></script>
 	<script src="./lib/vuetify/vuetify-v1.0.0.min.js"></script>
 	<script src="./lib/vue-router/vue-router-3.0.1.min.js"></script>
+
+	<!-- Components -->
+	<script src="./components/app-toolbar.js"></script>
 
 	<!-- Routes -->
 	<script src="./routes/homeRoute.js"></script>

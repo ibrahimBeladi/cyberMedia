@@ -20,7 +20,7 @@ var homeRoute = {
 						Team
 					</h3>
 					<v-layout row wrap justify-center>
-						<v-flex xs6 md4 v-for="i in 5">
+						<v-flex xs6 md4 v-for="i in 5" :key="i">
 							<v-card>
 								<v-card-media src="../res/imgs/hacker.jpg" height="250px" contain></v-card-media>
 								<v-card-text>
