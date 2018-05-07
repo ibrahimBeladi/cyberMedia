@@ -6,7 +6,7 @@ var homeRoute = {
 				<v-layout align-center>
 					<v-flex text-xs-center>
 						<h3 class="display-3">
-							2B || !2B
+							{{ $t("message.toBe") }}
 						</h3>
 					</v-flex>
 				</v-layout>

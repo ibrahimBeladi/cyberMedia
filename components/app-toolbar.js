@@ -11,6 +11,14 @@ Vue.component("app-toolbar", {
 				<template v-for="link in links">
 					<v-btn flat :to="link.to">{{ link.title }}</v-btn>
 				</template>
+				<v-btn flat @click="changeLang">
+					<template v-if="isEN">
+						عربي
+					</template>
+					<template v-else>
+						English
+					</template>
+				</v-btn>
 			</v-toolbar-items>
 		</v-toolbar>
 	`,
@@ -26,6 +34,19 @@ Vue.component("app-toolbar", {
 		color: {
 			type: String,
 			default: "blue"
+		}
+	},
+	methods: {
+		changeLang() {
+			if (i18n.locale == "en")
+				i18n.locale = "ar";
+			else
+				i18n.locale = "en";
+		}
+	},
+	computed: {
+		isEN: function () {
+			return i18n.locale == "en";
 		}
 	}
 });
