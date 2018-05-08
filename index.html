@@ -7,10 +7,18 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<link rel="stylesheet" href="./lib/vuetify/vuetify-v1.0.0.min.css">
+	<link rel="stylesheet" href="./lib/fonts/dubai.css">
+	<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
 
 	<style>
 		[v-cloak] {
 			display: none;
+		}
+
+		* {
+			font-family: 'Dubai-Regular', sans-serif;
+			font-family: 'Cairo', sans-serif;
 		}
 	</style>
 
@@ -56,6 +64,18 @@
 			el: "#app",
 			router,
 			i18n,
+			mounted: function () {
+				var x = document.cookie;
+				if (x != "") {
+					i18n.locale = x;
+					console.log(x);
+				}
+				else {
+					document.cookie = "ar";
+					i18n.locale = 'ar'
+					console.log(i18n.locale);
+				}
+			},
 			computed: {
 				dir: function () {
 					if (i18n.locale == 'ar')

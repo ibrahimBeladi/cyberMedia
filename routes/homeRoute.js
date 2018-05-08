@@ -1,7 +1,7 @@
 var homeRoute = {
 	template: `
 	<div>
-		<v-jumbotron src="../res/parallax.jpg" :gradient="gradient" dark>
+		<v-jumbotron src="../res/parallax.jpg" dark>
 			<v-container fill-height>
 				<v-layout align-center>
 					<v-flex text-xs-center>
@@ -17,14 +17,22 @@ var homeRoute = {
 			<v-layout align-center>
 				<v-flex text-xs-center>
 					<h3 class="display-3">
-						Team
+						{{ $t("message.team") }}
 					</h3>
 					<v-layout row wrap justify-center>
-						<v-flex xs6 md4 v-for="i in 5" :key="i">
+						<v-flex xs6 md4>
 							<v-card>
 								<v-card-media src="../res/imgs/hacker.jpg" height="250px" contain></v-card-media>
 								<v-card-text>
-									Hacker name
+									{{ $t("message.ibra") }}
+								</v-card-text>
+							</v-card>
+						</v-flex>
+						<v-flex xs6 md4 v-for="i in 4" :key="i">
+							<v-card>
+								<v-card-media src="../res/imgs/hacker.jpg" height="250px" contain></v-card-media>
+								<v-card-text>
+									{{ $t("message.hacker") }}
 								</v-card-text>
 							</v-card>
 						</v-flex>
@@ -33,8 +41,5 @@ var homeRoute = {
 			</v-layout>
 		</v-container>
 	</div>
-	`,
-	data: () => ({
-		gradient: 'to top right, rgba(63,81,181, .7), rgba(25,32,72, .7)'
-	})
+	`
 }
