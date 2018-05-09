@@ -1,28 +1,40 @@
 var messages = {
     en: {
         message: {
-            toBe: 'To be or not to be',
+            toBe: 'A quote',
             title1: 'first link',
             title2: 'second link',
             title3: 'third link',
             title4: 'fourth link',
-            team: "Team",
-            ibra: "Ibrahim Al-Beladi",
             content: "content ",
             hacker: "hacker name",
+        },
+        team: {
+            team: "Team",
+            ibra: "Ibrahim Al-Beladi",
+            osama: "Osama Albulaykhi",
+            azoz: "Abdulaziz Al-Awwad",
+            abood: "Abdullah Moshabab",
+            musab: "Musab Alghuraibi",
         }
     },
     ar: {
         message: {
-            toBe: 'اكون او لا اكون',
+            toBe: 'مقولة',
             title1: 'الرابط الاول',
             title2: 'الرابط الثاني',
             title3: 'الرابط الثالث',
             title4: 'الرابط الرابع',
-            team: "الفريق",
-            ibra: "ابراهيم البلادي",
             content: "المحتوى ",
             hacker: "اسم الهكر",
+        },
+        team: {
+            team: "الفريق",
+            ibra: "ابراهيم البلادي",
+            osama: "اسامة البليخي",
+            azoz: "عبدالعزيز العواد",
+            abood: "عبدالله مشبب",
+            musab: "مصعب الغريبي",
         }
     }
 };
