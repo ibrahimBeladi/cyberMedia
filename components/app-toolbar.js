@@ -2,7 +2,11 @@ Vue.component("app-toolbar", {
 	template: `
 		<v-toolbar :color="color" dense app dark>
 			<v-toolbar-items>
-				<v-btn to="home" flat>CyberMedia</v-btn>
+				<v-btn flat to="home">
+					<v-avatar>
+						<img src="./res/imgs/logo.png"/>
+					</v-avatar>
+				</v-btn>
 			</v-toolbar-items>
 
 			<v-spacer></v-spacer>
