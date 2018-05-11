@@ -1,5 +1,5 @@
 var routes = [
-    { path: '/', name: 'Base', component: homeRoute },
+	{ path: '/', name: 'Base', component: homeRoute },
 	{ path: '/home', name: 'Home', component: homeRoute },
 	{ path: '/p1', name: 'P1', component: p1 },
 	{ path: '/p2', name: 'P2', component: p2 },
