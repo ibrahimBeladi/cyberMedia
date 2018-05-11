@@ -7,7 +7,6 @@ var messages = {
 			title3: 'third link',
 			title4: 'fourth link',
 			content: "content ",
-			hacker: "hacker name",
 		},
 		team: {
 			team: "Team",
@@ -26,7 +25,6 @@ var messages = {
 			title3: 'الرابط الثالث',
 			title4: 'الرابط الرابع',
 			content: "المحتوى ",
-			hacker: "اسم الهكر",
 		},
 		team: {
 			team: "الفريق",
