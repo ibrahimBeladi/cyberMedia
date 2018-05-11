@@ -1,7 +1,7 @@
 var homeRoute = {
 	template: `
 	<div>
-		<v-parallax src="https://www.accenture.com//www.accenture.com/t20161212T205430Z__w__/us-en/_acnmedia/Accenture/Conversion-Assets/DotCom/Images/Global/Dualpub_93/Accenture-Supply-Chain-Cybersecurity-Marquee.jpg" dark>
+		<v-parallax :src="parallax" dark>
 			<v-container fill-height>
 				<v-layout align-center>
 					<v-flex text-xs-center>
@@ -42,7 +42,8 @@ var homeRoute = {
 				{ name: "azoz" },
 				{ name: "abood" },
 				{ name: "musab" },
-			]
+			],
+			parallax: "https://www.accenture.com//www.accenture.com/t20161212T205430Z__w__/us-en/_acnmedia/Accenture/Conversion-Assets/DotCom/Images/Global/Dualpub_93/Accenture-Supply-Chain-Cybersecurity-Marquee.jpg"
 		}
 	}
 }
