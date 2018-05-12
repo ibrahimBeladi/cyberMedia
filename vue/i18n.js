@@ -2,10 +2,6 @@ var messages = {
 	en: {
 		message: {
 			toBe: 'A quote',
-			title1: 'first link',
-			title2: 'second link',
-			title3: 'third link',
-			title4: 'fourth link',
 			content: "content ",
 		},
 		team: {
@@ -15,15 +11,19 @@ var messages = {
 			azoz: "Abdulaziz Al-Awwad",
 			abood: "Abdullah Moshabab",
 			musab: "Musab Alghuraibi",
+		},
+		links: {
+			title1: 'Media',
+		},
+		media: {
+			a: "Anti-Cyber Crime Law",
+			p: "Presentation",
+			i: "Infographic",
 		}
 	},
 	ar: {
 		message: {
 			toBe: 'مقولة',
-			title1: 'الرابط الاول',
-			title2: 'الرابط الثاني',
-			title3: 'الرابط الثالث',
-			title4: 'الرابط الرابع',
 			content: "المحتوى ",
 		},
 		team: {
@@ -33,6 +33,14 @@ var messages = {
 			azoz: "عبدالعزيز العواد",
 			abood: "عبدالله مشبب",
 			musab: "مصعب الغريبي",
+		},
+		links: {
+			title1: 'الميديا',
+		},
+		media: {
+			a: "نظام مكافحة جرائم المعلوماتية",
+			p: "العرض التقديمي",
+			i: "العرض المرئي",
 		}
 	}
 };

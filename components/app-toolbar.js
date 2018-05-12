@@ -13,7 +13,9 @@ Vue.component("app-toolbar", {
 
 			<v-toolbar-items>
 				<template v-for="link,i in links">
-					<v-btn flat :to="link.to">{{ $t( "message.title"+(i+1) ) }}</v-btn>
+					<v-btn flat :to="link.to">
+						{{ $t( "links.title"+(i+1) ) }}
+					</v-btn>
 				</template>
 				<v-btn flat @click="changeLang">
 					<template v-if="isEN">
@@ -28,10 +30,7 @@ Vue.component("app-toolbar", {
 	`,
 	data: () => ({
 		links: [
-			{ to: "p1" },
-			{ to: "p2" },
-			{ to: "p3" },
-			{ to: "p4" }
+			{ to: "media" },
 		]
 	}),
 	props: {
