@@ -13,9 +13,16 @@ var mediaRoute = {
 						<v-flex xs12 md4 v-for="link in links" :key="link.title">
 							<v-card>
 								<v-card-text>
-									<a :href="link.href" target="_blank">
-										{{ $t( "media."+link.code ) }}
-									</a>
+									<v-layout row wrap>
+										<v-flex xs8 style="margin:auto">
+											<a :href="link.href" target="_blank">
+												{{ $t( "media."+link.code ) }}
+											</a>
+										</v-flex>
+										<v-flex xs4 class="text-xs-right">
+											<img src="./res/imgs/logo.png" height="100"/>
+										</v-flex>
+									</v-layout>
 								</v-card-text>
 							</v-card>
 						</v-flex>
