@@ -3,28 +3,28 @@ var mediaRoute = {
 	<div>
 		<v-card>
 			<v-card-title class="justify-center pt-5">
-				<p class="headline">
+				<span class="headline">
 					{{ $t( "links.title1" ) }}
-				</p>
+				</span>
 			</v-card-title>
 			<v-card-text class="pa-1">
 				<v-container grid-list-md :class="getClass">
-					<v-layout row wrap>
-						<v-flex xs12 md4 v-for="link in links" :key="link.title">
-							<v-card>
-								<v-card-text>
-									<v-layout row wrap>
-										<v-flex xs8 style="margin:auto">
-											<a :href="link.href" target="_blank">
-												{{ $t( "media."+link.code ) }}
-											</a>
-										</v-flex>
-										<v-flex xs4 class="text-xs-right">
-											<img src="./res/imgs/logo.png" height="100"/>
-										</v-flex>
-									</v-layout>
-								</v-card-text>
-							</v-card>
+					<v-layout row wrap justify-center>
+						<v-flex xs12 sm6 md4 v-for="link in links" :key="link.title" class="media-item">
+							<a :href="link.href" target="_blank" style="text-decoration: none;">
+								<v-card class="text-xs-center">
+									<v-card-media class="center-icon pt-3 pb-2">
+										<v-icon color="grey" size="100">
+											{{ link.icon }}
+										</v-icon>
+									</v-card-media>
+									<v-card-text class="pa-3">
+										<span class="subheading">
+											{{ $t( "media."+link.code ) }}
+										</span>
+									</v-card-text>
+								</v-card>
+							</a>
 						</v-flex>
 					</v-layout>	
 				</v-container>
@@ -35,9 +35,9 @@ var mediaRoute = {
 	data: function () {
 		return {
 			links: [
-				{ code: "a", href: "http://www.citc.gov.sa/en/RulesandSystems/CITCSystem/Documents/LA_004_%20E_%20Anti-Cyber%20Crime%20Law.pdf" },
-				{ code: "p", href: "//google.com" },
-				{ code: "i", href: "//google.com" },
+				{ code: "a", icon: "mdi-security", href: "http://www.citc.gov.sa/en/RulesandSystems/CITCSystem/Documents/LA_004_%20E_%20Anti-Cyber%20Crime%20Law.pdf" },
+				{ code: "p", icon: "mdi-presentation-play", href: "//google.com" },
+				{ code: "i", icon: "mdi-camcorder-box", href: "//google.com" },
 			]
 		}
 	},

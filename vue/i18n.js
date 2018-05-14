@@ -14,6 +14,7 @@ var messages = {
 		},
 		links: {
 			title1: 'Media',
+			title2: 'Team',
 		},
 		media: {
 			a: "Anti-Cyber Crime Law",
@@ -35,7 +36,8 @@ var messages = {
 			musab: "مصعب الغريبي",
 		},
 		links: {
-			title1: 'الميديا',
+			title1: 'الوسائط',
+			title2: 'الفريق',
 		},
 		media: {
 			a: "نظام مكافحة جرائم المعلوماتية",

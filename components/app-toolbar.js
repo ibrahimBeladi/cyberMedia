@@ -7,16 +7,17 @@ Vue.component("app-toolbar", {
 						<img src="./res/imgs/logo.png"/>
 					</v-avatar>
 				</v-btn>
-			</v-toolbar-items>
-
-			<v-spacer></v-spacer>
-
-			<v-toolbar-items>
 				<template v-for="link,i in links">
 					<v-btn flat :to="link.to">
 						{{ $t( "links.title"+(i+1) ) }}
 					</v-btn>
 				</template>
+			</v-toolbar-items>
+
+			<v-spacer></v-spacer>
+
+			<v-toolbar-items>
+				
 				<v-btn flat @click="changeLang">
 					<template v-if="isEN">
 						عربي
@@ -31,6 +32,7 @@ Vue.component("app-toolbar", {
 	data: () => ({
 		links: [
 			{ to: "media" },
+			{ to: "team" },
 		]
 	}),
 	props: {

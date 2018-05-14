@@ -5,3 +5,11 @@
 * {
     font-family: 'Cairo', sans-serif;
 }
+
+.center-icon div{
+    justify-content: center;
+}
+
+.media-item:hover * {
+    color: black !important;
+}

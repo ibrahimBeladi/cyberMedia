@@ -12,8 +12,6 @@ var homeRoute = {
 				</v-layout>
 			</v-container>
 		</v-parallax>
-		
-		<app-team></app-team>
 	</div>
 	`,
 	data: function () {

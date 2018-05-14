@@ -1,24 +1,30 @@
 Vue.component("app-team", {
 	template: `
-	<v-container fill-height grid-list-xl>
-		<v-layout align-center>
-			<v-flex text-xs-center>
-				<h3 class="display-3">
+	<div>
+		<v-card>
+			<v-card-title class="justify-center pt-5">
+				<span class="headline">
 					{{ $t("team.team") }}
-				</h3>
-				<v-layout row wrap justify-center>
-					<v-flex xs6 md4 v-for="p in team" :key="p.name">
-						<v-card>
-							<v-card-media src="../res/imgs/hacker.jpg" :height="height" contain></v-card-media>
-							<v-card-text>
-								{{ $t("team."+p.name) }}
-							</v-card-text>
-						</v-card>
-					</v-flex>
-				</v-layout>
-			</v-flex>
-		</v-layout>
-	</v-container>
+				</span>
+			</v-card-title>
+			<v-card-text class="pa-1">
+				<v-container fill-height grid-list-xl>
+					<v-layout row wrap justify-center>
+						<v-flex xs6 md4 v-for="p in team" :key="p.name">
+							<v-card>
+								<v-card-media src="../res/imgs/hacker.jpg" :height="height" contain></v-card-media>
+								<v-card-text class="text-xs-center">
+									<span class="subheading">
+										{{ $t("team."+p.name) }}
+									</span>
+								</v-card-text>
+							</v-card>
+						</v-flex>
+					</v-layout>
+				</v-container>
+			</v-card-text>
+		</v-card>
+	</div>
 	`,
 	data: function () {
 		return {
