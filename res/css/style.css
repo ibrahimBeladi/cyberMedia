@@ -13,3 +13,7 @@
 .media-item:hover * {
     color: black !important;
 }
+
+.v-parallax__content{
+    padding:0 !important;
+}
