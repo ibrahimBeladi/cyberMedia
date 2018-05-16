@@ -1,7 +1,7 @@
 var mediaRoute = {
 	template: `
 	<div>
-		<v-card>
+		<v-card class="py-5">
 			<v-card-title class="justify-center pt-5">
 				<span class="headline">
 					{{ $t( "links.title1" ) }}
