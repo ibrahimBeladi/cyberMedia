@@ -15,6 +15,7 @@ var messages = {
 			musab: "Musab Alghuraibi",
 		},
 		links: {
+			home: "Home",
 			title1: 'Media',
 			title2: 'Team',
 		},
@@ -33,7 +34,7 @@ var messages = {
 			months: "months",
 			years: "years",
 			infinity: "infinity",
-			hack:"* In an average hacker's pc."
+			hack: "* In an average hacker's pc."
 		}
 	},
 	ar: {
@@ -52,6 +53,7 @@ var messages = {
 			musab: "مصعب الغريبي",
 		},
 		links: {
+			home: "الرئيسية",
 			title1: 'الوسائط',
 			title2: 'الفريق',
 		},
@@ -70,7 +72,7 @@ var messages = {
 			months: "شهور",
 			years: "سنين",
 			infinity: "infinity",
-			hack:"* على جهاز هكر عادي."
+			hack: "* على جهاز هكر عادي."
 		}
 	}
 };
