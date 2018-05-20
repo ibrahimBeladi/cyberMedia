@@ -28,7 +28,7 @@ Vue.component("app-toolbar", {
 			</v-toolbar-items>
 		</v-toolbar>
 
-		<v-navigation-drawer dark temporary absolute v-model="drawer" :right="!isEN" class="hidden-sm-and-up">
+		<v-navigation-drawer dark temporary app v-model="drawer" :right="!isEN" class="hidden-sm-and-up">
 			<v-list dense>
 				<v-list-tile to="/home">
 					<v-list-tile-action>
