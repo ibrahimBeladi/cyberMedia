@@ -17,3 +17,7 @@
 .v-parallax__content{
     padding:0 !important;
 }
+
+.larger {
+    font-size: x-large;
+}
