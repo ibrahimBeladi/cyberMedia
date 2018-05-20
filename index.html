@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css">
 
+	<link rel="stylesheet" href="./res/css/transition.css">
 	<link rel="stylesheet" href="./res/css/style.css">
 
 	<link rel="icon" type="image/png" href="./res/imgs/logo.png" />
@@ -22,7 +23,9 @@
 		<app-toolbar color="grey darken-2"></app-toolbar>
 
 		<v-content>
-			<router-view></router-view>
+			<transition name="fade" mode="out-in">
+				<router-view></router-view>
+			</transition>
 		</v-content>
 
 		<v-footer color="grey darken-2"></v-footer>
