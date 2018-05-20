@@ -8,10 +8,16 @@ Vue.component("app-password", {
 			</v-card-title>
 			<v-card-text>
 				<v-layout row wrap>
-					<v-flex xs8 offset-xs2>
+					<v-flex xs2></v-flex>
+
+					<v-flex xs12 sm8>
 						<v-text-field v-model="password" :append-icon="invisible ? 'mdi-eye' : 'mdi-eye-off'" :append-icon-cb="() => (invisible = !invisible)" :type="invisible ? 'password' : 'text'" label="Enter your password"></v-text-field>
 					</v-flex>
-					<v-flex xs8 offset-xs2 v-if="password">
+
+					<v-flex xs2></v-flex>
+					<v-flex xs2></v-flex>
+
+					<v-flex xs12 sm8 v-if="password">
 						{{ $t( "password.time" ) }} : {{ time | humanReadable }}*.
 						<p class="caption">
 							{{ $t("password.hack") }}
