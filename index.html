@@ -66,12 +66,12 @@
 				var x = document.cookie;
 				if (x != "") {
 					i18n.locale = x;
-					console.log(x);
+					document.documentElement.lang = x;
 				}
 				else {
 					document.cookie = "en";
 					i18n.locale = "en";
-					console.log(i18n.locale);
+					document.documentElement.lang = "en";
 				}
 			},
 			computed: {

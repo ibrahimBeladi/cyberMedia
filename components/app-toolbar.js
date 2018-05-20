@@ -98,10 +98,12 @@ Vue.component("app-toolbar", {
 			if (i18n.locale == "en") {
 				document.cookie = "ar";
 				i18n.locale = "ar";
+				document.documentElement.lang = "ar";
 			}
 			else {
 				document.cookie = "en";
 				i18n.locale = "en";
+				document.documentElement.lang = "en";
 			}
 		}
 	},
