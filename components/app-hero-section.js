@@ -1,6 +1,5 @@
 Vue.component("app-hero-section", {
 	template: `
-	<div>
         <v-parallax src="./res/imgs/parallax.jpg" height="500">
             <v-carousel delimiter-icon="mdi-stop" interval="7000" hide-controls>
                 <v-carousel-item v-for="(item,i) in 2" :key="i">
@@ -21,6 +20,5 @@ Vue.component("app-hero-section", {
                 </v-carousel-item>
             </v-carousel>
         </v-parallax>
-    </div>
 	`,
 });

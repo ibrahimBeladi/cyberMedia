@@ -1,6 +1,5 @@
 Vue.component("app-team", {
 	template: `
-	<div>
 		<v-card class="py-5">
 			<v-card-title class="justify-center pt-5">
 				<span class="headline">
@@ -24,7 +23,6 @@ Vue.component("app-team", {
 				</v-container>
 			</v-card-text>
 		</v-card>
-	</div>
 	`,
 	data: function () {
 		return {

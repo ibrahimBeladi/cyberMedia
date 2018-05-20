@@ -12,5 +12,11 @@ function GetIEVersion() {
 }
 
 var ver = GetIEVersion();
+
 if (ver > 0 && ver < 12)
-	alert("Unsupported browser!");//TBD
+	unsupportedBrowser();
+
+function unsupportedBrowser() {
+	//TBD
+	alert("Unsupported browser!");
+}

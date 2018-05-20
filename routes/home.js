@@ -5,4 +5,4 @@ var homeRoute = {
 		<app-password></app-password>
 	</div>
 	`
-}
+};
