@@ -1,7 +1,7 @@
 Vue.component("app-hero-section", {
 	template: `
 	<div>
-        <v-parallax :src="parallax" height="500">
+        <v-parallax src="./res/imgs/parallax.jpg" height="500">
             <v-carousel delimiter-icon="mdi-stop" interval="7000" hide-controls>
                 <v-carousel-item v-for="(item,i) in 2" :key="i">
                     <v-layout fill-height class="ma-0">
@@ -23,9 +23,4 @@ Vue.component("app-hero-section", {
         </v-parallax>
     </div>
 	`,
-	data: function () {
-		return {
-			parallax: "https://www.accenture.com/t20161212T205430Z__w__/us-en/_acnmedia/Accenture/Conversion-Assets/DotCom/Images/Global/Dualpub_93/Accenture-Supply-Chain-Cybersecurity-Marquee.jpg"
-		}
-	},
 });
