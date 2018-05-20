@@ -2,29 +2,29 @@ Vue.component("app-toolbar", {
 	template: `
 	<div>
 		<v-toolbar :color="color" dense app dark>
+		<v-toolbar-items>
+			<v-btn flat @click="changeLang" class="hidden-xs-only">
+				{{ isEN ? "عربي" : "English" }}
+			</v-btn>
+
+			<v-toolbar-side-icon @click="drawer = true" class="hidden-sm-and-up">
+				<v-icon>mdi-menu</v-icon>
+			</v-toolbar-side-icon>
+		</v-toolbar-items>
+
+			<v-spacer></v-spacer>
+
 			<v-toolbar-items>
-				<v-btn flat to="home">
-					<v-avatar>
-						<img src="./res/imgs/logo.png"/>
-					</v-avatar>
-				</v-btn>
 				<template v-for="item,i in items">
 					<v-btn flat :to="item.to" class="hidden-xs-only">
 						{{ $t( item.title ) }}
 					</v-btn>
 				</template>
-			</v-toolbar-items>
-
-			<v-spacer></v-spacer>
-
-			<v-toolbar-items>
-				<v-btn flat @click="changeLang" class="hidden-xs-only">
-					{{ isEN ? "عربي" : "English" }}
+				<v-btn flat to="home">
+					<v-avatar>
+						<img src="./res/imgs/logo.png"/>
+					</v-avatar>
 				</v-btn>
-
-				<v-toolbar-side-icon @click="drawer = true" class="hidden-sm-and-up">
-					<v-icon>mdi-menu</v-icon>
-				</v-toolbar-side-icon>
 			</v-toolbar-items>
 		</v-toolbar>
 
