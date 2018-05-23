@@ -2,9 +2,14 @@
     display: none;
 }
 
-* {
-    font-family: 'Cairo', sans-serif;
+*,
+.title,
+.display-1,
+.headline  {
+    font-family: 'Cairo',sans-serif!important;
 }
+
+
 
 .center-icon div{
     justify-content: center;
@@ -20,4 +25,9 @@
 
 .larger {
     font-size: x-large;
+}
+
+.forceRTL { 
+    direction: rtl;
+    text-align: right;
 }
