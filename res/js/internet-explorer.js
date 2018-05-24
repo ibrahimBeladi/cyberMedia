@@ -18,5 +18,5 @@ if (ver > 0 && ver < 12)
 
 function unsupportedBrowser() {
 	//TBD
-	alert("Unsupported browser!");
+	document.write("<p>Unsupported browser!</p>")
 }
