@@ -1,7 +1,7 @@
 Vue.component("app-cyber", {
 	template: `
 		<v-card class="py-5 grey lighten-4">
-			<v-container>
+			<v-container :class="getClass">
 				<v-expansion-panel>
 					<v-expansion-panel-content expand-icon="mdi-chevron-down" value="true" :class="{'forceRTL':$i18n.locale=='ar'}">
 						<div slot="header" class="title">

@@ -2,15 +2,15 @@ Vue.component("app-toolbar", {
 	template: `
 	<div>
 		<v-toolbar :color="color" dense app dark>
-		<v-toolbar-items>
-			<v-btn flat @click="changeLang" class="hidden-xs-only">
-				{{ isEN ? "عربي" : "English" }}
-			</v-btn>
+			<v-toolbar-items>
+				<v-btn flat @click="changeLang" class="hidden-xs-only">
+					{{ isEN ? "عربي" : "English" }}
+				</v-btn>
 
-			<v-toolbar-side-icon @click="drawer = true" class="hidden-sm-and-up">
-				<v-icon>mdi-menu</v-icon>
-			</v-toolbar-side-icon>
-		</v-toolbar-items>
+				<v-toolbar-side-icon @click="drawer = true" class="hidden-sm-and-up">
+					<v-icon>mdi-menu</v-icon>
+				</v-toolbar-side-icon>
+			</v-toolbar-items>
 
 			<v-spacer></v-spacer>
 
