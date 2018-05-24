@@ -1,6 +1,6 @@
 Vue.component("app-media", {
 	template: `
-		<v-card class="py-5">
+		<v-card class="py-2">
 			<v-card-title class="justify-center pt-5">
 				<span class="headline">
 					{{ $t( "links.title1" ) }}

@@ -1,6 +1,6 @@
 Vue.component("app-team", {
 	template: `
-		<v-card class="py-5">
+		<v-card class="pt-2">
 			<v-card-title class="justify-center pt-5">
 				<span class="headline">
 					{{ $t("team.team") }}
@@ -9,13 +9,15 @@ Vue.component("app-team", {
 			<v-card-text class="pa-1">
 				<v-container grid-list-md fill-height :class="getClass">
 					<v-layout row wrap justify-center>
-						<v-flex xs6 md4 v-for="p in team" :key="p.name">
+						<v-flex xs12 sm6 md4 v-for="p in team" :key="p.name">
 							<v-card>
-								<v-card-media src="./res/imgs/hacker.jpg" :height="height" contain></v-card-media>
-								<v-card-text class="text-xs-center">
-									<span class="subheading">
+								<v-card-text class="text-xs-center py-2">
+									<span class="title">
 										{{ $t("team."+p.name) }}
 									</span>
+									<p class="subheading ma-0">
+										- {{ $t("team."+p.name+"2") }}
+									</p>
 								</v-card-text>
 							</v-card>
 						</v-flex>
