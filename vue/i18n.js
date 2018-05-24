@@ -15,6 +15,11 @@ var i18n = new VueI18n({
 				azoz: "Abdulaziz Al-Awwad",
 				abood: "Abdullah Moshabab",
 				musab: "Musab Alghuraibi",
+				ibra2: "Web Developer",
+				osama2: "Project Manager",
+				azoz2: "Graphics Designer",
+				abood2: "Public Relations",
+				musab2: "Content Designer"
 			},
 			links: {
 				home: "Home",
@@ -78,6 +83,11 @@ var i18n = new VueI18n({
 				azoz: "عبدالعزيز العواد",
 				abood: "عبدالله مشبب",
 				musab: "مصعب الغريبي",
+				ibra2: "مطور ويب",
+				osama2: "رئيس مشروع",
+				azoz2: "مصمم رسومات",
+				abood2: "علاقات عامة",
+				musab2: "مصمم محتوي"
 			},
 			links: {
 				home: "الرئيسية",
