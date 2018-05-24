@@ -11,7 +11,7 @@ Vue.component("app-team", {
 					<v-layout row wrap justify-center>
 						<v-flex xs6 md4 v-for="p in team" :key="p.name">
 							<v-card>
-								<v-card-media src="../res/imgs/hacker.jpg" :height="height" contain></v-card-media>
+								<v-card-media src="./res/imgs/hacker.jpg" :height="height" contain></v-card-media>
 								<v-card-text class="text-xs-center">
 									<span class="subheading">
 										{{ $t("team."+p.name) }}

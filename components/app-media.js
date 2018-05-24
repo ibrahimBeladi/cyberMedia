@@ -33,7 +33,7 @@ Vue.component("app-media", {
 	data: function () {
 		return {
 			links: [
-				{ code: "media.crimeLaws", icon: "mdi-security", both: "http://www.citc.gov.sa/en/RulesandSystems/CITCSystem/Documents/LA_004_%20E_%20Anti-Cyber%20Crime%20Law.pdf" },
+				{ code: "media.crimeLaws", icon: "mdi-security", both: "./res/pdf/Anti-Cyber Crime Law.pdf" },
 				{ code: "media.presentation", icon: "mdi-presentation-play", both: "//google.com" },
 				{ code: "media.infographic", icon: "mdi-camcorder-box", ar: "./res/videos/cyberMedia - Arabic.mp4", en: "./res/videos/cyberMedia - English.mp4" },
 			]
