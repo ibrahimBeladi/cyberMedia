@@ -33,6 +33,7 @@ var i18n = new VueI18n({
 			},
 			password: {
 				time: "Time needed to crack a password",
+				label: "Enter your password",
 				seconds: "seconds",
 				minutes: "minutes",
 				hours: "hours",
@@ -101,6 +102,7 @@ var i18n = new VueI18n({
 			},
 			password: {
 				time: "الوقت اللازم لكسر كلمة المرور",
+				label: "ادخل كلمة المرور",
 				seconds: "ثواني",
 				minutes: "دقائق",
 				hours: "ساعات",

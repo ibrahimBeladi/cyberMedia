@@ -10,8 +10,10 @@ Vue.component("app-password", {
 				<v-layout row wrap>
 					<v-flex xs2></v-flex>
 
-					<v-flex xs12 sm8>
-						<v-text-field v-model="password" :append-icon="invisible ? 'mdi-eye' : 'mdi-eye-off'" :append-icon-cb="() => (invisible = !invisible)" :type="invisible ? 'password' : 'text'" label="Enter your password"></v-text-field>
+					<v-flex xs12 sm8 :class="{'forceRTL2':$i18n.locale=='ar'}">
+						<v-form>
+							<v-text-field v-model="password" :append-icon="invisible ? 'mdi-eye' : 'mdi-eye-off'" :append-icon-cb="() => (invisible = !invisible)" :type="invisible ? 'password' : 'text'" :label="$t( 'password.label' )"></v-text-field>
+						</v-form>
 					</v-flex>
 
 					<v-flex xs2></v-flex>
