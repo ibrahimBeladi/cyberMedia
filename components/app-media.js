@@ -34,7 +34,7 @@ Vue.component("app-media", {
 		return {
 			links: [
 				{ code: "media.crimeLaws", icon: "mdi-security", both: "./res/pdf/Anti-Cyber Crime Law.pdf" },
-				{ code: "media.presentation", icon: "mdi-presentation-play", both: "./res/powerpoint/CyberMedia.pptx" },
+				{ code: "media.presentation", icon: "mdi-presentation-play", both: "./res/presentation/CyberMedia.exe" },
 				{ code: "media.infographic", icon: "mdi-camcorder-box", ar: "./res/videos/cyberMedia - Arabic.mp4", en: "./res/videos/cyberMedia - English.mp4" },
 			]
 		}
